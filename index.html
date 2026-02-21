@@ -11,6 +11,17 @@
             contain-intrinsic-size: 3000px 1500px
         }
     </style>
+	<script>
+  const params = new URLSearchParams(window.location.search);
+  const scrollAmount = params.get("scroll");
+
+  if (scrollAmount) {
+    window.scrollTo({
+      top: parseInt(scrollAmount),
+      behavior: "smooth"
+    });
+  }
+</script>
 
     <!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ -->
     <title> Expedite Hire - Your Trusted Recruiting Partner - Smile, You’ve Found Us</title>
